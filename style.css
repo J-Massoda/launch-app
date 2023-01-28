@@ -90,6 +90,65 @@ a {
   /* padding: 0.5em 1em; */
 }
 
+/* selector pop up  */
+
+.selector-content {
+  position: relative;
+  /* padding: 3.5rem .5rem 1.25rem 1.5rem; */
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, .15);
+  transition: .3s;
+}
+
+.select-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.select-modal-content {
+  position: relative;
+  /* background-color:; */
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.seletor-modal-slector {
+  row-gap: 1rem;
+}
+
+.Select-modal-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.selector-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* Active modal */
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 .bt {
   text-align: center;
   font-weight: 200;
@@ -121,7 +180,24 @@ a {
 
 .btn-content {
   text-align: center;
+  /* display: inline-flex; */
+  align-items: center;
+  padding: .75rem 1rem;
 }
+
+.bt-link {
+  padding: 0;
+  background-color: transparent;
+}
+
+.select-button {
+  cursor: pointer;
+}
+
+.service-button:hover .button-icon {
+  transform: translatex(.25rem);
+}
+
 
 .btn-light {
   background-color: #D9D9D9;
